@@ -1,0 +1,119 @@
+body{
+    background: url(../images/bg-mobile.svg), rgb(116, 55, 144);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+
+}
+.imagem{
+    margin: 20% 10% 0 10%;
+    width: 80%;
+    display: inline-block;
+
+}
+.imagem img{
+    width: 100%;
+
+}
+section{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.5em;
+    padding: 10%;
+    line-height: 1.5;
+}
+
+button{
+    padding: 5% 40%;
+    margin-top: 7%;
+    border-radius: 50px;
+    font-size: 1.001em;
+    color: rgb(116, 55, 144);
+}
+button:hover{
+    background-color: hsl(266, 97%, 65%);
+    color: white;
+}
+.media{
+    display: flex;
+    justify-content: center;
+}
+.media a{
+    margin: 1em .8em;
+    font-size: 1.5em;
+    color: white;
+    border: 3px solid white;
+    padding: .5em .7em;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+.media a:nth-child(1){
+    padding: .5em .9em;
+}
+.media a:hover{
+    border-color: hsl(266, 97%, 65%);
+    color: hsl(266, 97%, 65%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+
+}
+
+@media screen and (min-width: 44.5em){
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .imagem{
+
+        margin: 10% 5%;
+        width: 40%;
+        height: 70%;
+    }
+    .imagem img{
+        width: 100%;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0 ;
+        margin-bottom: 0;
+    }
+    section{
+        width: 47%;
+        font-size: 1.2em;
+        text-align: left;
+        padding-left: 1em;
+        display: flex;
+        flex-direction: column;
+        padding-right: .9em;
+    }
+    section p{
+    }
+    button{
+        align-self: flex-start;
+        padding: 1em 2.5em;
+    }
+    .media{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+    .media a{
+        margin-right: 1em;
+        margin-top: 0;
+        margin-bottom: 0;        
+
+    }
+}
